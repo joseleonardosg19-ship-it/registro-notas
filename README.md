@@ -1,6 +1,6 @@
 # Registro de Notas
 
-Proyecto realizado en Python como parte de la materia **Nuevas Tecnologías de Programación**.
+Proyecto realizado en Python como parte de la materia Nuevas Tecnologías de Programación.
 
 La aplicación permite registrar notas, consultar el promedio y mostrar si el resultado final es aprobado o reprobado.
 
@@ -14,7 +14,7 @@ La aplicación permite registrar notas, consultar el promedio y mostrar si el re
 
 ## Tecnologías utilizadas
 
-* Python 3
+* Python 
 * Git
 * GitHub
 
@@ -34,18 +34,13 @@ En el desarrollo del proyecto se aplicaron los siguientes conceptos básicos de 
 1. Tener Python instalado.
 2. Clonar el repositorio.
 3. Abrir la carpeta del proyecto desde la terminal.
-4. Ejecutar el siguiente comando:
-
-```bash
-python app.py
-```
 
 ## Escala de notas
 
 Las notas utilizadas por el programa están entre **0 y 5**.
 
-* **3.0 o más:** APROBADO
-* **Menos de 3.0:** REPROBADO
+* 3.0 o más: APROBADO
+* Menos de 3.0: REPROBADO
 
 ## Estructura del proyecto
 
