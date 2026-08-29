@@ -1,6 +1,8 @@
-notas = []
+from notas import registrar_nota, calcular_promedio
+
 
 while True:
+
     print("\n--- REGISTRO DE NOTAS ---")
     print("1. Registrar nota")
     print("2. Ver promedio")
@@ -9,23 +11,14 @@ while True:
     opcion = input("Seleccione una opción: ")
 
     if opcion == "1":
-        try:
-            nota = float(input("Ingrese la nota (0 a 20): "))
-            if 0 <= nota <= 20:
-                notas.append(nota)
-                print("Nota registrada correctamente")
-            else:
-                print("La nota debe estar entre 0 y 20")
-        except ValueError:
-            print("Ingrese un valor numérico válido")
+        registrar_nota()
+
     elif opcion == "2":
-        if notas:
-            promedio = sum(notas) / len(notas)
-            print(f"Promedio: {promedio:.2f}")
-        else:
-            print("No hay notas registradas")
+        calcular_promedio()
+
     elif opcion == "3":
-        print("Programa finalizado")
+        print("Programa finalizado.")
         break
+
     else:
-        print("Opción no válida")
+        print("Opción no válida.")
