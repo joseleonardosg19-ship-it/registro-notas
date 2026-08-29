@@ -1,22 +1,31 @@
-from notas import registrar_nota, calcular_promedio
+print(">>> ESTOY EJECUTANDO EL APP.PY NUEVO <<<")
 
+from menu import mostrar_menu
+from estudiantes import registrar_estudiante, listar_estudiantes
+from notas import registrar_nota, calcular_promedio
+from aprobacion import verificar_aprobacion
 
 while True:
-
-    print("\n--- REGISTRO DE NOTAS ---")
-    print("1. Registrar nota")
-    print("2. Ver promedio")
-    print("3. Salir")
-
+    mostrar_menu()
     opcion = input("Seleccione una opción: ")
 
     if opcion == "1":
-        registrar_nota()
+        registrar_estudiante()
 
     elif opcion == "2":
-        calcular_promedio()
+        registrar_nota()
 
     elif opcion == "3":
+        calcular_promedio()
+
+    elif opcion == "4":
+        listar_estudiantes()
+
+    elif opcion == "5":
+        promedio = calcular_promedio()
+        verificar_aprobacion(promedio)
+
+    elif opcion == "6":
         print("Programa finalizado.")
         break
 
